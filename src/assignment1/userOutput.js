@@ -1,10 +1,10 @@
 import React from 'react';
-import './userInput.css';
+import './userOutput.css';
 const UserOutput =(props)=>{
     return (
-        <div>
+        <div className='UserOutput'>
             <p>Following is employees details!</p>
-            <p>My name is {props.name} and I am {props.age} years old.</p>
+            <p>name: {props.name} age: {props.age}</p>
         </div>
     );
 };

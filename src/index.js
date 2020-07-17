@@ -4,11 +4,11 @@ import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import UserInput from './project/userInput';
+import Trial from './appsplit/containers/trial';
 
 ReactDOM.render(
   <React.StrictMode>
-    <UserInput/>
+    <Trial/>
   </React.StrictMode>,
   document.getElementById('root')
 );
