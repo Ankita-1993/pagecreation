@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './form.css';
 class Myform extends Component {
     constructor(props){
         super(props);
@@ -31,12 +32,14 @@ class Myform extends Component {
                 <p>Enter your name:</p>
                 <input
                     type = 'text'
+                    placeholder= "username"
                     name = 'username'
                     onChange = {this.myChangeHandler}
                 />
                 <p>Enter your age:</p>
                 <input
                     type = 'text'
+                    placeholder='age'
                     name = 'age'
                     onChange = {this.myChangeHandler}
                 />

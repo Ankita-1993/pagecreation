@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './nameform.css';
 
 class NameForm extends Component {
     constructor(props) {
@@ -16,13 +17,15 @@ class NameForm extends Component {
     }
     render() { 
         return (
-            <form onSubmit={this.handlesubmit}>
-                <label>
-                    Essay:
-                    <textarea value = {this.state.value} onChange={this.handlechange}/>
-                </label>
-                <input type = 'submit' value = 'submit' />
-            </form>
+            <div >
+                <form onSubmit={this.handlesubmit} className="nameform">
+                    <label className="nameform">
+                        Essay:
+                        <textarea value = {this.state.value} onChange={this.handlechange}/>
+                    </label><br/>
+                    <input type = 'submit' classname="nameform" value = 'submit' />
+                </form>
+            </div>
         );
     }
 }

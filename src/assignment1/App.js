@@ -3,8 +3,8 @@ import UserInput from './userInput';
 import UserOutput from './userOutput';
 class App extends Component {
     state = {
-       username: 'Ankita',
-       age: '28'
+       username: 'ankita',
+       age: '26'
     };    
     changeHandler=(event)=>{
         this.setState({username: event.target.value, age: event.target.value});
@@ -13,10 +13,8 @@ class App extends Component {
     render() {
         return (
             <div className= 'App'>
-                <UserInput changed={this.changeHandler} currentName={this.state.username} currentAge={this.state.age}/>
-                <UserOutput name= {this.state.username} age={this.state.age}/>
-                <UserOutput name= {this.state.username} age={this.state.age}/>
-                
+                <UserInput changed={this.changeHandler} currentName={this.state.username}currentAge={this.state.age}/>
+                <UserOutput changed={this.changeHandler} name= {this.state.username} age={this.state.age}/>              
             </div>
         );
     }

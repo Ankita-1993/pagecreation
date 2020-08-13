@@ -4,11 +4,11 @@ import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import Trial from './appsplit/containers/trial';
+import Assign from './assignment3/table2';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Trial/>
+    <Assign/>
   </React.StrictMode>,
   document.getElementById('root')
 );
